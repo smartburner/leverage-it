@@ -1,0 +1,99 @@
+{
+    "key": "group_60c78e64355d8",
+    "title": "Lessons Fields",
+    "fields": [
+        {
+            "key": "field_60c7984f205e6",
+            "label": "Start Date",
+            "name": "start_date",
+            "type": "date_time_picker",
+            "instructions": "Choose here the Start Date and Time of the Lesson",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_60c79869205e7",
+            "label": "End Date",
+            "name": "end_date",
+            "type": "date_time_picker",
+            "instructions": "Choose here the End Date and Time of the Lesson",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_60c798908f6e3",
+            "label": "Type of the Lesson",
+            "name": "type_of_the_lesson",
+            "type": "button_group",
+            "instructions": "Choose here the Type of the Lesson - Free or Paid",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "free": "Free",
+                "paid": "Paid"
+            },
+            "allow_null": 0,
+            "default_value": "free_lesson",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_60c799447664a",
+            "label": "Lesson Attachment (PDF)",
+            "name": "lesson_attachment",
+            "type": "file",
+            "instructions": "Choose or upload here the Lesson Attachment (PDF Files only)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".pdf"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lessons"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1623862482
+}
